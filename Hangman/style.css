@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ropa+Sans:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #c1d72e;
+    /* background-color: gray; */
+    color: #fff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1000px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.word-display {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-display .letter {
+    width: 28px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+}
+
+.word-display .letter.guessed {
+    border-color: transparent;
+    margin: 0 0 20px;
+}
+
+.guesses-text b {
+    color: #ff0000;
+}
+
+.container .keyboard {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.keyboard button {
+    width: calc(100% / 9 - 5px);
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #c1d72e;
+    cursor: pointer;
+    outline: none;
+}
+
+.keyboard button:hover {
+    background-color: #9bad25;
+}
+
+.keyboard button[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.hangman-box {
+    height: 200px;
+    width: 200px;
+    /* border: 1px dotted #fff; */
+    margin: 20px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+#hint,
+#play-again {
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 150px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#hint:hover,
+#play-again:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #c1d72e;
+}
+
+.hangman-img {
+    width: 150px;
+    height: auto;
+}

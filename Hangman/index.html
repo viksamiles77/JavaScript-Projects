@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hangman</h1>
+        <h2>vanilla javascript Hangman game</h2>
+        <h3>Use the alphabet below to guess the word, or click hint to get a clue.</h3>
+        <div class="keyboard"></div>
+
+
+        <ul class="word-display"></ul>
+
+        <h3 class="guesses-text">You have <b>0 / 6</b> lives</h3>
+
+        <h3 class="hint-text">Hint - <b></b></h3>
+
+        <div class="hangman-box">
+            <img src="./images/hangman-0.svg" alt="hangman-img" class="hangman-img">
+        </div>
+        <div class="bottom-btn">
+            <button id="hint">Hint</button>
+            <button id="play-again">Play again</button>
+        </div>
+    </div>
+
+
+
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>
