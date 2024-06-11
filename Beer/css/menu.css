@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+#main-heading {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  background-color: #000;
+  padding: 5px;
+}
+
+#main-heading > h1 {
+  font-family: "Protest Riot", "Nunito", sans-serif;
+  color: #fff;
+}
+
+#main-heading > h1 > span {
+  font-family: "Protest Riot", "Nunito", sans-serif;
+  color: rgb(254, 182, 22);
+}
+
+.nav-bar {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(7, auto);
+  padding: 5px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 15px 10px -15px #000;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.nav-bar-item {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.filters-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#beer-search {
+  padding: 2px 5px 2px 5px;
+  font-size: 15px;
+  border: 1px solid rgb(254, 182, 22);
+}
+
+input[type="checkbox"] {
+  margin-left: 5px;
+  accent-color: rgb(254, 182, 22);
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(254, 182, 22);
+}
+
+#select-pagination {
+  padding: 2px 5px 2px 5px;
+  width: 50px;
+  border: 1px solid rgb(254, 182, 22);
+}
+#select-pagination:focus {
+  border-color: rgb(254, 182, 22);
+}
+
+#back-to-generator-btn {
+  padding: 2px 5px 2px 5px;
+  background-color: rgb(254, 182, 22);
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#back-to-generator-btn:hover {
+  cursor: pointer;
+  background-color: rgb(218, 149, 0);
+  transition: background-color 0.3s;
+}
+
+#result {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;
+}
+
+.beer-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+th,
+td {
+  padding: 3px;
+  border-bottom: 2px solid #000;
+}
+
+th {
+  text-align: left;
+  font-size: 18px;
+}
+
+td {
+  font-size: 16px;
+}
+
+.nav-abv {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#previous-button,
+#next-button {
+  padding: 2px 5px 2px 5px;
+  background-color: rgb(254, 182, 22);
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 75px;
+}
+
+#previous-button:hover,
+#next-button:hover {
+  cursor: pointer;
+  background-color: rgb(218, 149, 0);
+  transition: background-color 0.3s;
+}
+
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 100px;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 85%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.no-beers-found {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  th {
+    font-size: 16px;
+  }
+
+  td {
+    font-size: 14px;
+  }
+  input[type="checkbox"] {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    grid-template-columns: auto auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  input[type="checkbox"] {
+    margin-left: 0px;
+  }
+}

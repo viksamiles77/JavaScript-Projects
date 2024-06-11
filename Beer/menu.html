@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>Whole Beer Menu</title>
+</head>
+
+<body>
+    <div id="main-heading">
+        <h1><span>BEER</span> MENU</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-bar-item">
+            <p class="filters-text">Filters:</p>
+        </div>
+        <div class="nav-bar-item">
+            <input type="search" name="beer" id="beer-search" placeholder="Search for a beer">
+        </div>
+        <div class="nav-bar-item">
+            <select name="pagination" id="select-pagination">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="80">80</option>
+            </select>
+        </div>
+        <div class="nav-bar-item tooltip">
+            <label for="checkbox"><span class="tooltip-text">Alcohol by volume</span><span class="nav-abv">ABV &#62
+                    6%</span></label>
+            <input type="checkbox" name="checkbox" id="checkbox-abv">
+        </div>
+        <div class="nav-bar-item tooltip">
+            <label for="checkbox"><span class="tooltip-text">Measuring the color of a beer</span><span
+                    class="nav-abv">EBC &#62
+                    50</span></label>
+            <input type="checkbox" name="checkbox" id="checkbox-ebc">
+        </div>
+        <div class="nav-bar-item tooltip">
+            <label for="checkbox"><span class="tooltip-text">International Bitterness Units</span><span
+                    class="nav-abv">IBU &#62
+                    40</span></label>
+            <input type="checkbox" name="checkbox" id="checkbox-ibu">
+        </div>
+        <div class="nav-bar-item">
+            <button id="back-to-generator-btn">Back To Generator</button>
+        </div>
+    </div>
+    <div id="result">
+    </div>
+    <div id="btn-wrapper">
+        <button id="previous-button">Previous</button>
+        <button id="next-button">Next</button>
+    </div>
+
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
